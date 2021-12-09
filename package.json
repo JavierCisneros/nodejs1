@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.17.1"
+  },
+  "name": "nodejs1",
+  "version": "0.0.1",
+  "description": "Practica de nodejs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "desarrollo": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavierCisneros/nodejs1.git"
+  },
+  "keywords": [
+    "nodejs",
+    "practica"
+  ],
+  "author": "Javier Cisneros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavierCisneros/nodejs1/issues"
+  },
+  "homepage": "https://github.com/JavierCisneros/nodejs1#readme"
+}

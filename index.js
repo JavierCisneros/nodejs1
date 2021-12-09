@@ -25,9 +25,8 @@ fs.readFile('./texto.txt',function(err, data){
 
 });*/
 
-const http = require('http');
 
-//Crear un servidor
+//Crear un servidor y en envia una respuesta con nodejs 
 /*http.createServer(function (req, res){ //request (peticion del host) response (respuesta del servidor)
     res.writeHead(200,{'Content-type':'text/html'});
     res.write('<h1> Que es esto</h1>');
@@ -45,8 +44,24 @@ const http = require('http');
 const server = http.createServer(handleserver);
 
 server.listen(3000, function(){
-    console.log('Server on port 3000');
+    console.log('Server on port 3000' .green);
 });
+*/
+//NodeJS y Express
+const Express = require('express');
 
+const server = Express();
+//Funcion para enviar respuesta con express
+server.get('/', (req, res) => {
+    res.send('<h1>Hola con express y NodeJS</h1>');
+} );
+//Funcion para escuchar el puerto 3000
+server.listen(3000, () => {
+    console.log('Server on port 3000' .red);
+} );
+//Variable de servidor 
+const http = require('http');
+//Funcion colors node package module
+const colors = require('colors');
 
 
