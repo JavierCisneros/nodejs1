@@ -47,7 +47,6 @@ const server = http.createServer(handleserver);
 server.listen(3000, function(){
     console.log('Server on port 3000');
 });
-*/
 
 
 
